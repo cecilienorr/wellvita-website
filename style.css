@@ -1,0 +1,102 @@
+body {
+  font-family: "work sans";
+}
+
+/* ------------- 'SUNDHEDSTEST' STARTS -------------------*/
+
+#outside {
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 100;
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 70%;
+  /* To see the limits of the form */
+  padding: 1em;
+  /* border: 1px solid #ccc; */
+  border-radius: 1em;
+}
+#survey-form {
+  background-color: white;
+}
+
+fieldset {
+  border: 0px solid lightgray;
+  margin: 10px;
+  margin-bottom: 40px;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+legend {
+  font-size: 1.5rem;
+}
+
+#number {
+  width: 150px;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+/* label {
+    /* To make sure that all label have the same size and are properly align */
+/* display: inline-block; */
+/* width: 80px; */
+/* text-align: right; */
+
+input:focus,
+textarea:focus {
+  /* To give a little highligh on active elements */
+  border-color: black;
+}
+
+textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+
+  /* To allow users to resize any textarea vertically
+       It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  margin: 0.5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: #f9f7f6;
+  color: black;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+#submitbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.grey_fieldset {
+  display: grid;
+  background-color: #f9f7f6;
+}
+
+/* ------------- 'SUNDHEDSTEST' ENDS -------------------*/
