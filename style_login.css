@@ -291,11 +291,19 @@ nav{
     top: 8%;
     right: 7%;
     width: 250px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
 
  }
 
+ .sub-menu-wrap.open-menu{
+    max-height: 400px;
+ }
+
+
  .sub-menu{
-    background: rgb(248, 247, 247);
+    background: rgb(249, 248, 248);
     padding: 20px;
     margin: 10px;
  }
@@ -309,7 +317,7 @@ nav{
     border: 0;
     height: 1px;
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: rgb(230, 230, 230);
     margin: 15px 0 10px;
  }
 
@@ -323,7 +331,7 @@ nav{
     text-decoration: underline;
  }
 
-
+ 
 
 
 

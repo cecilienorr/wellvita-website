@@ -23,3 +23,9 @@ const menuBtn = document.querySelector(".menu-icon span");
            cancelBtn.classList.add("show");
          }
 
+         let subMenu = document.getElementById("subMenu");
+
+         function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+         }
+
