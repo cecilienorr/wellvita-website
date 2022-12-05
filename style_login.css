@@ -10,7 +10,7 @@
 }
 
 .container{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
 }
 
 .container-code{
-    height: 78vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
