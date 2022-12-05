@@ -1,0 +1,492 @@
+/* Google Fonts - Work Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.container-code{
+    height: 78vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.form {
+
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius:6px;
+    background: white;   
+}
+
+header {
+    font-size: 38px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.form .field {
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.field input,
+.field button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+.field button a {
+    text-decoration: none;
+    color: white;
+}
+
+.field input{
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #C5C5C5; 
+    font-weight: 300;
+    
+}
+
+.field input:focus {
+    border: 1.3px solid rgb(128, 128, 128);
+    
+}
+
+.field button {
+    border-radius: 30px;
+    background-color: #696765;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.field button:hover {
+    background-color: #5c5a57;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span {
+    font-weight: 300;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    color: #868686;
+    text-decoration: underline;
+    
+}
+
+.form-link a:hover {
+    color: blue;
+}
+
+.form a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+.line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #C5C5C5;
+}
+
+.line::before{
+    content: 'OR';
+    position: absolute;
+    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #C5C5C5;
+    padding: 0 15px;
+}
+
+.media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+a.facebook, a.google{
+border: 1px solid black;
+color: black;
+}
+
+a.facebook:hover{
+  border: 1px solid blue;
+  color: blue;
+}
+
+a.google:hover{
+    border: 1px solid blue;
+  color: blue;
+  }
+
+a.facebook .facebook-icon,
+.img.google-img{
+    height: 28px;
+    width: 28px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+img.google-img {
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    object-fit: cover;
+}
+
+
+
+/* Own styling */
+
+.form p {
+    font-weight: 300;
+    color: #727070;
+    margin-top: -10px;
+ 
+}
+
+
+/* Navigation bar */
+
+nav{
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 100px;
+  }
+
+
+  nav .logo img {
+    max-width: 150px;
+  }
+  nav .nav-items{
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 40px;
+  }
+  nav .nav-items li{
+    list-style: none;
+    padding: 0 15px;
+  }
+  nav .nav-items li a{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  nav .nav-items li a:hover{
+    color: #353535;
+  }
+  nav form{
+    display: flex;
+    height: 40px;
+    padding: 2px;
+    background: white;
+    min-width: 18%!important;
+    border-radius: 2px;
+    border: 1px solid rgba(155,155,155,0.2);
+  }
+  nav form .search-data{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: black;
+    font-size: 16px;
+    border: none;
+    font-weight: 300;
+    background: none;
+    outline: none;
+  }
+  nav form button{
+    padding: 0 15px;
+    color: rgb(188, 188, 188);
+    font-size: 17px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  nav form button:hover{
+    background: rgb(236, 236, 236);
+  }
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon{
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: rgb(127, 126, 126);
+    cursor: pointer;
+    display: none;
+  }
+  nav .menu-icon span,
+  nav .cancel-icon,
+  nav .search-icon{
+    display: none;
+  }
+
+  .nav-icons {
+    display: flex;
+    margin-left: 20px;
+    color: rgb(127, 126, 126);
+    font-size: 26px;
+    cursor: pointer;
+
+  }
+
+  .cart-icon {
+    margin-left: 8px;
+  }
+
+ .sub-menu-wrap{
+    position: absolute;
+    top: 8%;
+    right: 7%;
+    width: 250px;
+
+ }
+
+ .sub-menu{
+    background: rgb(248, 247, 247);
+    padding: 20px;
+    margin: 10px;
+ }
+
+ .user-info {
+    display: flex;
+    align-items: center;
+ }
+
+ .sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: 15px 0 10px;
+ }
+
+ .sub-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+ }
+
+ .sub-menu a:hover {
+    text-decoration: underline;
+ }
+
+
+
+
+
+
+
+
+  @media (max-width: 1245px) {
+    nav{
+      padding: 0 50px;
+    }
+  }
+  @media (max-width: 1140px){
+    nav{
+      padding: 0px;
+    }
+    nav .logo{
+      flex: 2;
+      text-align: center;
+    }
+    nav .nav-items{
+      position: fixed;
+      z-index: 99;
+      top: 70px;
+      width: 100%;
+      left: -100%;
+      height: 100%;
+      padding: 10px 50px 0 50px;
+      text-align: center;
+      background: white;
+      display: inline-block;
+      transition: left 0.3s ease;
+    }
+    nav .nav-items.active{
+      left: 0px;
+    }
+    nav .nav-items li{
+      line-height: 40px;
+      margin: 30px 0;
+    }
+    nav .nav-items li a{
+      font-size: 20px;
+    }
+    nav form{
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      opacity: 0;
+      pointer-events: none;
+      transition: top 0.3s ease, opacity 0.1s ease;
+    }
+
+    nav form.active{
+      top: 95px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    nav form:before{
+      position: absolute;
+      content: "";
+      top: -13px;
+      right: 0px;
+      width: 0;
+      height: 0;
+      z-index: -1;
+      border: 10px solid transparent;
+      border-bottom-color: #1e232b;
+      margin: -20px 0 0;
+    }
+    nav form:after{
+      position: absolute;
+      content: '';
+      height: 60px;
+      padding: 2px;
+      background: white;
+      border-radius: 2px;
+      min-width: calc(100% + 20px);
+      z-index: -2;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    nav .menu-icon{
+      display: block;
+      font-size: 24px;
+    }
+  
+    nav .menu-icon span{
+      display: block;
+    }
+
+    nav .search-icon {
+        display: none;
+    }
+    nav .menu-icon span.hide,
+    nav .search-icon.hide{
+      display: none;
+    }
+    nav .cancel-icon.show{
+      display: block;
+    }
+
+    .nav-icons {
+        display: flex;
+        margin-right: 50px;
+        color: rgb(127, 126, 126);
+        font-size: 26px;
+    
+      }
+    
+     
+  }
+
+
+  @media (max-width: 980px){
+    nav .menu-icon,
+    nav .cancel-icon,
+    nav .search-icon{
+      margin: 0 20px;
+    }
+    nav form{
+      right: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .nav-icons {
+        margin-right: 25px;
+     
+      }
+
+
+  }
+  @media (max-width: 350px){
+    nav .menu-icon,
+    nav .cancel-icon,
+    nav .search-icon{
+      margin: 0 10px;
+      font-size: 16px;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content header{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .content .text{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .content .space{
+    margin: 10px 0;
+  }
+
+  .search-bar form {
+    margin-top: 0px;
+}
+
+/* Drop down */
+
+
+  
