@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="subscription-page1.css">
+
+    <!--FONT STYLES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header></header>
+
+
+
+    <main>
+        <h3>Your subscriptions</h3>
+
+        <div class="box-1">
+            <div class="box-1-top">
+                <div class="d-vitamin-flex-1">
+                    <p>D-vitamin</p>
+                    <p class="grey-text">30 tablets</p>
+                </div>
+                <div class="d-vitamin-flex-2">
+                    <p>Frequency:</p>
+                    <p class="grey-text">60 days</p>
+                </div>
+                <p id="price">67,00 DKK</p>
+
+                <!-- Shipping icon -->
+                <div class="d-vitamin-flex-3">
+                    <img src="/assets/ri_truck-fill.png" alt="shipping truck icon">
+                    <p>Next delivery: 23-30 Nov. </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Change Frequency</p>
+                <label class="dropdown">
+
+                    <div class="dd-button">
+                        Bi-monthly
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu">
+                        <li>December 2022</li>
+                        <li>January 2023</li>
+                        <li>Feburary 2023</li>
+                        <li> March 2023 </li>
+                    </ul>
+                </label>
+            </div>
+            <hr>
+
+            <div class="flex-1">
+                <p>Postpone</p>
+                <label class="dropdown">
+
+                    <div class="dd-button-1">
+                        Postpone
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu-1">
+                        <li>Every 30 days (Monthly)</li>
+                        <li>Every 60 days (Bi-monthly)</li>
+                    </ul>
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Pause</p>
+                <label class="dropdown">
+                    <div onclick="buttonColor()" class="dd-button-2">
+                        Pause
+                    </div>
+                </label>
+            </div>
+
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Cancellation</p>
+                <label class="dropdown">
+                    <div onclick="buttonColor()" class="dd-button-3">
+                        Cancellation
+                    </div>
+                </label>
+            </div>
+
+            <br>
+
+            <label class="dropdown">
+                <div class="dd-button-4">
+                    WHY D-VITAMIN?
+                </div>
+            </label>
+
+        </div>
+
+        <div class="box-2">
+            <div class="box-2-top">
+                <div class="d-vitamin-flex-1">
+                    <p>D-vitamin</p>
+                    <p class="grey-text">30 tablets</p>
+                </div>
+                <div class="d-vitamin-flex-2">
+                    <p>Frequency:</p>
+                    <p class="grey-text">60 days</p>
+                </div>
+                <p id="price">67,00 DKK</p>
+
+                <!-- Shipping icon -->
+                <div class="d-vitamin-flex-3">
+                    <img src="/assets/ri_truck-fill.png" alt="shipping truck icon">
+                    <p>Next delivery: 23-30 Nov. </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Change Frequency</p>
+                <label class="dropdown">
+
+                    <div class="dd-button">
+                        Bi-monthly
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu">
+                        <li>December 2022</li>
+                        <li>January 2023</li>
+                        <li>Feburary 2023</li>
+                        <li> March 2023 </li>
+                    </ul>
+                </label>
+            </div>
+            <hr>
+
+            <div class="flex-1">
+                <p>Postpone</p>
+                <label class="dropdown">
+
+                    <div class="dd-button-1">
+                        Postpone
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu-1">
+                        <li>Every 30 days (Monthly)</li>
+                        <li>Every 60 days (Bi-monthly)</li>
+                    </ul>
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Pause</p>
+                <label class="dropdown">
+                    <div onclick="buttonColor()" class="dd-button-2">
+                        Pause
+                    </div>
+                </label>
+            </div>
+
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Cancellation</p>
+                <label class="dropdown">
+                    <div onclick="buttonColor()" class="dd-button-3">
+                        Cancellation
+                    </div>
+                </label>
+            </div>
+
+            <br>
+
+            <label class="dropdown">
+                <div class="dd-button-4">
+                    WHY D-VITAMIN?
+                </div>
+            </label>
+
+        </div>
+
+        <div class="box-3">
+            <p id="paused-text">Paused</p>
+            <div class="flex-2">
+                <p id="d-vitamin">D-vitamin</p>
+                <p class="grey-text" id="box-3-tablets">30 tablets</p>
+                <p id="start-text">Start</p>
+            </div>
+            <div class="flex-3">
+                <p>Frequency</p>
+                <p class="grey-text">30 days</p>
+            </div>
+            <p id="price-2">67,00 DKK</p>
+            <p id="date">Paused: 23 Sep. 2022</p>
+        </div>
+
+        <div class="box-3">
+            <p id="paused-text">Paused</p>
+            <div class="flex-2">
+                <p id="d-vitamin">D-vitamin</p>
+                <p class="grey-text" id="box-3-tablets">30 tablets</p>
+                <p id="start-text">Start</p>
+            </div>
+            <div class="flex-3">
+                <p>Frequency</p>
+                <p class="grey-text">30 days</p>
+            </div>
+            <p id="price-2">67,00 DKK</p>
+            <p id="date">Paused: 23 Sep. 2022</p>
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer></footer>
+
+    <script src="subscription-page1.js"></script>
+</body>
+
+</html>
