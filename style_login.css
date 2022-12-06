@@ -538,6 +538,12 @@ div.scrollmenu {
     padding-right: 15px;
     text-decoration: none;
   }
+
+  div.scrollmenu .sign-out-a {
+    display: inline-block;
+
+  }
+
   
   div.scrollmenu a:hover {
     color: black;
@@ -583,9 +589,13 @@ div.scrollmenu {
 
       }
 
-      .sign-out-a a {
-        padding-right: 70px;
+      div.scrollmenu .sign-out-a {
+        display: inline-block;
+        margin-left: 260px;
+    
       }
+
+    
   }
   
 
