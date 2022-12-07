@@ -595,6 +595,28 @@ div.scrollmenu {
     
       }
 
+      
+
+    
+  }
+
+  @media (min-width: 1300px) {
+
+
+    .dashboard-menu {
+      margin: auto;
+      margin-top: 80px;
+      width: 1000px; 
+  
+    }
+
+    div.scrollmenu a {
+        padding-right: 45px;
+
+      }
+
+      
+
     
   }
   
