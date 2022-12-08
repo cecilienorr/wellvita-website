@@ -15,11 +15,15 @@
         <h1 class="h1-account">Manage your account</h1>
     <fieldset>
     </fieldset>
-    <button type="button" class="collapsible">Contact information <img src="arrow.png" alt="arrow" class="arrow"></button>
-    <section class="content">
+    <!-- <button type="button" class="collapsible">Contact information <img src="arrow.png" alt="arrow" class="arrow"></button> 
+    <section class="content"> -->
     <fieldset>      
 
-      <form action="/action_page.php" class="wrapper">
+
+      <form action="/action_page.php" class="wrapper-account">
+        
+<div class="flex-dw">
+<div class="grid-dw">
         <label for="fname">First Name</label>
         <input
           type="text"
@@ -27,15 +31,20 @@
           name="firstname"
           placeholder="Your name.."
         />
-
-        <label for="lname">Last Name</label>
+    </div>
+    <div class="grid-dw">
+        <label for="fname">Last name</label>
         <input
           type="text"
           id="lname"
           name="lastname"
-          placeholder="Your last name.."
+          placeholder="Your name.."
         />
+    </div>
 
+</div>
+
+<div class="grid-dw">
         <label for="lname">E-mail</label>
         <input
           type="text"
@@ -48,25 +57,32 @@
         <input type="tel" id="lname" name="lastname" placeholder="+45" />
 
         <input type="submit" value="Update" class="update-btn" />
-        <hr></hr>
+     
+        <div class="grid-dw">
+            <hr></hr>
       </form>
     </fieldset>
     </section>
 
     <!------------------- ADDRESS ----------------------->
-
-    <button type="button" class="collapsible">Address <img src="arrow.png" alt="arrow" class="arrow"></button>
-    <section class="content">
+   <!-- <button type="button" class="collapsible">Address <img src="arrow.png" alt="arrow" class="arrow"></button> 
+    <section class="content"> -->
     <fieldset>      
-      <form action="/action_page.php" class="wrapper">
-        <label for="street">First line</label>
-        <input
-          type="text"
-          id="street1"
-          name="firstname"
-          placeholder="Your street name"
-        />
 
+
+        <form action="/action_page.php" class="wrapper-account">
+          
+  <div class="flex-dw">
+  <div class="grid-dw">
+    <label for="street">First line</label>
+    <input
+      type="text"
+      id="street1"
+      name="firstname"
+      placeholder="Your street name"
+    />
+      </div>
+      <div class="grid-dw">
         <label for="street">Second line</label>
         <input
           type="text"
@@ -74,19 +90,38 @@
           name="firstname"
           placeholder="Your street name"
         />
+      </div>
+  
+  </div>
 
-        <label for="postcode">E-mail</label>
+  <div class="flex-dw">
+    <div class="grid-dw">
+        <label for="postcode">Postcode</label>
         <input type="text" id="postcode" name="postcode" placeholder="Number" />
+        </div>
+        <div class="grid-dw">
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="City"
+            />
+          </div>
+    </div>
+      </fieldset>
+      </section>
+    <fieldset>      
+<div>
+</div>
+        </div>
+        </div>
 
-        <div>
-        <label for="city">City</label>
-        <input type="text" id="City" name="City" placeholder="City" />
 
-
-        <br><input type="checkbox" id="billing-address" onclick="myFunction()" />
+        <br><input type="checkbox" id="billing-address" onclick="myFunction()" checked class="specifyColor-account" />
         <label for="billing-address" id="billing-address"
           >Billing address is the same as shipping address</label
-        ></br>
+        ></br></div>
 
 
         <input type="submit" value="Update"  class="update-btn"/>
@@ -97,15 +132,16 @@
 
 
     <!------------------- PAYMENT DETAILS ----------------------->
-    <button type="button" class="collapsible">Payment details <img src="arrow.png" alt="arrow" class="arrow"></button>
-    <section class="content">
+<!-- <button type="button" class="collapsible">Payment details <img src="arrow.png" alt="arrow" class="arrow"></button> 
+    <section class="content"> -->
 
     <fieldset>
 
       <form action="/action_page.php">
-        <input type="radio" id="card" name="payment" value="card" checked>
+        <input type="radio" id="card" name="payment" value="card" checked class="specifyColor">
         <label for="card">Card</label><br>
 <fieldset class="card-details">
+    <div class="grid-dw">
       <label for="Card_number">Card number</label>
       <input
         type="text"
@@ -113,6 +149,7 @@
         name="cardnumber"
         placeholder="1234 1234 1234 1234"
       />
+    </div>
 <div class="expiry-cvc-container">
     <div class="card-details">
       <label for="expiry">Expiry</label>
@@ -138,10 +175,13 @@
 
         <input type="radio" id="mobilepay" name="payment" value="mobilepay">
         <label for="Mobilepay">Mobilepay</label><br>
+      <hr id="hr-preferences"></hr>
         <input type="radio" id="invoice" name="payment" value="invoice">
         <label for="invoice">Invoice</label><br>
+      <hr id="hr-preferences"></hr>
         <input type="radio" id="klarna" name="payment" value="klarna">
         <label for="klarna">Klarna</label><br>
+      <hr id="hr-preferences"></hr>
       <input type="submit" value="Update" class="update-btn"/>
     
       <hr></hr>
@@ -150,8 +190,8 @@
 </section>
 
         <!------------------- PREFERENCES ----------------------->
-         <button type="button" class="collapsible">Preferences <img src="arrow.png" alt="arrow" class="arrow"></button>
-        <section class="content">
+         <!-- <button type="button" class="collapsible">Preferences <img src="arrow.png" alt="arrow" class="arrow"></button>
+        <section class="content"> -->
 
 <fieldset>
     <p class="p-preferences">You can customize the email or SMS text that appears on your phone when a new alert comes in.</p>
