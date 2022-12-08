@@ -1,0 +1,322 @@
+/* Google Fonts - Work Sans */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
+/* ------------- 'SUNDHEDSTEST' STARTS -------------------*/
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+.nav-campaign {
+  max-width: 150px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#outside {
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#description {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 100;
+}
+
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 80%;
+  /* To see the limits of the form */
+  padding: 1em;
+  /* border: 1px solid #ccc; */
+  border-radius: 1em;
+}
+#survey-form {
+  background-color: white;
+}
+
+fieldset {
+  border: 0px solid lightgray;
+  margin: 10px;
+  margin-bottom: 40px;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+legend {
+  font-size: 25px;
+}
+
+div + div {
+  margin-top: 1em;
+}
+
+label {
+  font-size: 17px;
+  margin-bottom: 10px;
+  /* To make sure that all label have the same size and are properly align */
+  /* display: inline-block; */
+  /* width: 80px; */
+  /* text-align: right;
+  
+    
+  
+  input:focus,
+  textarea:focus {
+    /* To give a little highligh on active elements */
+  border-color: black;
+}
+
+.line {
+  border-top: 1.5px solid black;
+  width: 70px;
+  margin-right: 100%;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+textarea {
+  /* To properly align multiline text field with their label */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+
+  /* To allow users to resize any textarea vertically
+         It works only on Chrome, Firefox and Safari */
+  resize: vertical;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  margin: 0.5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: #f9f7f6;
+  color: black;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #c7c7c7;
+}
+
+#submitbutton {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+}
+
+.grey_fieldset {
+  display: grid;
+  background-color: #f9f7f6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.specifyColor {
+  accent-color: black;
+}
+
+/* ------------- 'SUNDHEDSTEST' ENDS -------------------*/
+
+/* ------------- CAMPAIGN PAGE STARTS -------------------*/
+article {
+  text-align: left;
+}
+
+section {
+  position: absolute;
+  z-index: 10;
+  margin: 40px;
+  color: black;
+}
+
+.h1-campaign {
+  text-align: left;
+}
+
+.knap {
+  text-decoration: none;
+  background-color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: black;
+}
+
+.knap:hover {
+  background-color: #c7c7c7;
+}
+
+.p-campaign {
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
+/* .bg {
+    height: 100vh;
+    margin-left: -650px;
+    object-fit: fill;
+    position: relative;
+    z-index: 1;
+  } */
+
+.bg {
+  height: 70vh;
+  margin-left: -350px;
+  object-fit: fill;
+  position: relative;
+  z-index: 1;
+  margin-top: 200px;
+}
+.box1 {
+  overflow: hidden;
+}
+
+.wrapper {
+  background-color: #f0e3c6;
+  border-radius: 13px;
+  margin: 30px;
+
+  height: 100vh;
+}
+
+/*------------------------------------ Media queries-------------------------------- */
+
+@media (min-width: 620px) {
+  .bg {
+    height: 100vh;
+    margin-left: -400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 30px;
+  }
+  .wrapper {
+    margin: 60px;
+  }
+
+  .p-campaign {
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 750px) {
+  .bg {
+    height: 100vh;
+    margin-left: -200px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 50px;
+  }
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+  .wrapper {
+    margin: 60px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    object-fit: cover;
+    padding-left: 200px;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 90px;
+  }
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+  .wrapper {
+    margin: 60px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    object-fit: cover;
+    padding-left: 200px;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 100px;
+  }
+
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+
+  .wrapper {
+    margin: 60px;
+  }
+}
