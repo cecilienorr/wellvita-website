@@ -1,0 +1,261 @@
+/* Google Fonts - Work Sans */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* --------------------ACCOUNT SETTINGS STARTS --------------------------- */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #92ada4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #92ada4;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.form {
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: white;
+}
+
+header {
+  font-size: 38px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form {
+  max-width: 430px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 6px;
+  background: white;
+}
+
+.form .field {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+}
+
+.field button a {
+  text-decoration: none;
+  color: white;
+}
+
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid #c5c5c5;
+  font-weight: 300;
+}
+
+.field input:focus {
+  border: 1.3px solid rgb(128, 128, 128);
+}
+
+.update-btn {
+  width: 189px;
+  height: 46px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 0;
+  border: 0;
+  color: #e1dedb;
+}
+
+.fieldset-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+
+  position: absolute;
+  width: 356px;
+  left: 17px;
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+.h1-account {
+  font-size: 24;
+  font-weight: 400;
+}
+
+.h2-account {
+  font-size: 20;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: grid;
+  width: 356px;
+  grid-template-columns: 1fr;
+  border: 0;
+  transition: height 200ms;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  /* display: inline-block; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+#billing-address {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+hr {
+  width: 100%;
+  margin-top: 20px;
+  border: 1.5px solid black;
+}
+
+#hr-preferences {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 0.3px solid #bababa;
+}
+
+.expiry-cvc-container {
+  display: flex;
+}
+
+.card-details {
+  margin-right: 20px;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  background-color: white;
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .active,
+.collapsible:hover {
+  background-color: white;
+} */
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-preferences {
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #bababa;
+}
+
+/* --------------------ACCOUNT SETTINGS ENDS --------------------------- */

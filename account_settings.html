@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+    <!------------------- CONTACT INFORMATION ----------------------->
+    <fieldset class="fieldset-container" >
+        <h1 class="h1-account">Manage your account</h1>
+    <fieldset>
+    </fieldset>
+    <button type="button" class="collapsible">Contact information <img src="arrow.png" alt="arrow" class="arrow"></button>
+    <section class="content">
+    <fieldset>      
+
+      <form action="/action_page.php" class="wrapper">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="lname">E-mail</label>
+        <input
+          type="text"
+          id="email"
+          name="e-mail"
+          placeholder="name@mail.com"
+        />
+
+        <label for="lname">Phone number</label>
+        <input type="tel" id="lname" name="lastname" placeholder="+45" />
+
+        <input type="submit" value="Update" class="update-btn" />
+        <hr></hr>
+      </form>
+    </fieldset>
+    </section>
+
+    <!------------------- ADDRESS ----------------------->
+
+    <button type="button" class="collapsible">Address <img src="arrow.png" alt="arrow" class="arrow"></button>
+    <section class="content">
+    <fieldset>      
+      <form action="/action_page.php" class="wrapper">
+        <label for="street">First line</label>
+        <input
+          type="text"
+          id="street1"
+          name="firstname"
+          placeholder="Your street name"
+        />
+
+        <label for="street">Second line</label>
+        <input
+          type="text"
+          id="street2"
+          name="firstname"
+          placeholder="Your street name"
+        />
+
+        <label for="postcode">E-mail</label>
+        <input type="text" id="postcode" name="postcode" placeholder="Number" />
+
+        <div>
+        <label for="city">City</label>
+        <input type="text" id="City" name="City" placeholder="City" />
+
+
+        <br><input type="checkbox" id="billing-address" onclick="myFunction()" />
+        <label for="billing-address" id="billing-address"
+          >Billing address is the same as shipping address</label
+        ></br>
+
+
+        <input type="submit" value="Update"  class="update-btn"/>
+        <hr></hr>
+      </form>
+    </fieldset>
+    </section>
+
+
+    <!------------------- PAYMENT DETAILS ----------------------->
+    <button type="button" class="collapsible">Payment details <img src="arrow.png" alt="arrow" class="arrow"></button>
+    <section class="content">
+
+    <fieldset>
+
+      <form action="/action_page.php">
+        <input type="radio" id="card" name="payment" value="card" checked>
+        <label for="card">Card</label><br>
+<fieldset class="card-details">
+      <label for="Card_number">Card number</label>
+      <input
+        type="text"
+        id="cardnumber"
+        name="cardnumber"
+        placeholder="1234 1234 1234 1234"
+      />
+<div class="expiry-cvc-container">
+    <div class="card-details">
+      <label for="expiry">Expiry</label>
+      <input
+        type="text"
+        id="expiry"
+        name="expiry"
+        placeholder="12/24"
+      /></div>
+
+      <div class="card-details">
+      <label for="CVC">CVC</label>
+      <input
+        type="text"
+        id="CVC"
+        name="CVC"
+        placeholder="123"
+      />
+    </div>
+    </div>
+      
+    </fieldset>
+
+        <input type="radio" id="mobilepay" name="payment" value="mobilepay">
+        <label for="Mobilepay">Mobilepay</label><br>
+        <input type="radio" id="invoice" name="payment" value="invoice">
+        <label for="invoice">Invoice</label><br>
+        <input type="radio" id="klarna" name="payment" value="klarna">
+        <label for="klarna">Klarna</label><br>
+      <input type="submit" value="Update" class="update-btn"/>
+    
+      <hr></hr>
+</form>
+</fieldset>
+</section>
+
+        <!------------------- PREFERENCES ----------------------->
+         <button type="button" class="collapsible">Preferences <img src="arrow.png" alt="arrow" class="arrow"></button>
+        <section class="content">
+
+<fieldset>
+    <p class="p-preferences">You can customize the email or SMS text that appears on your phone when a new alert comes in.</p>
+
+    <fieldset>
+        <section class="toggle-container">
+        <h3 class="h3-account">SMS notification</h3>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label></section>
+        <p class="p-preferences">We use SMS notifications to send order confirmations, delivery updates etc.</p>
+    
+
+    </fieldset>
+
+    <hr id="hr-preferences"></hr>
+
+    <fieldset>
+        <section class="toggle-container">
+        <h3 class="h3-account">Email notification</h3>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label></section>
+        <p class="p-preferences">We use email notifications to send order confirmations, delivery updates etc.</p>
+   
+
+    </fieldset>
+
+
+    <hr id="hr-preferences"></hr>
+
+    <fieldset>
+        <section class="toggle-container">
+        <h3 class="h3-account">Call communication</h3>    <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label></section>
+        <p class="p-preferences">We call to confirm your orders, delivery updates etc.</p>
+    
+          <input type="submit" value="Update" class="update-btn"/>
+
+    </fieldset>
+</section>
+</fieldset>
+</fieldset>
+  </body>
+
+  <script src="script.js"></script>
+</html>
