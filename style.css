@@ -12,7 +12,8 @@ body {
   max-width: 150px;
   display: block;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #outside {
@@ -157,43 +158,110 @@ article {
 section {
   position: absolute;
   z-index: 10;
+  margin: 40px;
+  color: black;
 }
 
-.bg {
+.h1-campaign {
+  text-align: left;
+}
+
+.knap {
+  text-decoration: none;
+  background-color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: black;
+}
+
+.knap:hover {
+  background-color: #c7c7c7;
+}
+
+.p-campaign {
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+
+/* .bg {
   height: 100vh;
   margin-left: -650px;
-  object-fit: cover;
+  object-fit: fill;
   position: relative;
   z-index: 1;
-}
+} */
 
+.bg {
+  height: 70vh;
+  margin-left: -350px;
+  object-fit: fill;
+  position: relative;
+  z-index: 1;
+  margin-top: 200px;
+}
 .box1 {
   overflow: hidden;
 }
 
 .wrapper {
-  background-color: #e5e5e5;
+  background-color: #f0e3c6;
   border-radius: 13px;
-  margin: 15px;
+  margin: 30px;
 
   height: 100vh;
 }
 
+/*------------------------------------ Media queries-------------------------------- */
+
 @media (min-width: 620px) {
   .bg {
-    width: 100%;
-    height: 100%;
-    margin-left: 0px;
+    height: 100vh;
+    margin-left: -400px;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 30px;
+  }
+  .wrapper {
+    margin: 60px;
+  }
+
+  .p-campaign {
+    margin-top: -10px;
   }
 }
 
 @media (min-width: 750px) {
   .bg {
-    width: 100%;
-    height: 100%;
-    margin-left: 0px;
+    height: 100vh;
+    margin-left: -200px;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 50px;
+  }
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+  .wrapper {
+    margin: 60px;
   }
 }
 
@@ -203,6 +271,24 @@ section {
     height: 100%;
     margin-left: 0px;
     object-fit: cover;
+    padding-left: 200px;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 90px;
+  }
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+  .wrapper {
+    margin: 60px;
   }
 }
 
@@ -212,5 +298,25 @@ section {
     height: 100%;
     margin-left: 0px;
     object-fit: cover;
+    padding-left: 200px;
+    margin-top: 0px;
+  }
+
+  section {
+    max-width: 500px;
+    padding: 100px;
+  }
+
+  .h1-campaign {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .p-campaign {
+    margin-top: 0px;
+  }
+
+  .wrapper {
+    margin: 60px;
   }
 }
