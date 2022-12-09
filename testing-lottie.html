@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style-test.css" />
+  </head>
+  <body>
+    <!-- <lottie-interactive
+      path="https://assets8.lottiefiles.com/private_files/lf30_wg4xrovq.json"
+      style="width: 150px; height: 150px"
+      interaction="freeze-click"
+    >
+    </lottie-interactive> -->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <section class="icons">
+      <div>
+        <lottie-player
+          class="lottie"
+          src="animations/leaf-animation.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          autoplay
+        ></lottie-player>
+        <p>Plant based</p>
+      </div>
+      <div>
+        <lottie-player
+          src="animations/coin-animation.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          autoplay
+        ></lottie-player>
+        <p>Best price</p>
+      </div>
+      <div>
+        <lottie-player
+          src="animations/water-animation.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          autoplay
+        ></lottie-player>
+        <p>No artificial colouring</p>
+      </div>
+      <div>
+        <lottie-player
+          src="animations/kemi-animations.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          autoplay
+        ></lottie-player>
+        <p>Clinically tested</p>
+      </div>
+    </section>
+
+    <lottie-player
+      src="animations/thumb.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px"
+      autoplay
+      loop
+    ></lottie-player>
+
+    <lottie-player
+      src="animations/thumb-down.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px"
+      autoplay
+      loop
+    ></lottie-player>
+
+    <lottie-player
+      src="animations/star.json"
+      background="transparent"
+      speed="1"
+      style="width: 100px; height: 100px"
+      autoplay
+      loop
+    ></lottie-player>
+
+    <lottie-player
+      src="animations/health-score.json"
+      background="transparent"
+      speed="1"
+      style="width: 200px; height: 200px"
+      autoplay
+    ></lottie-player>
+  </body>
+  <script>
+    LottieInteractivity.create({
+      player: "#toggleLottie",
+      mode: "cursor",
+      actions: [
+        {
+          type: "toggle",
+        },
+      ],
+    });
+  </script>
+  <script src="scripts-lottie.js"></script>
+  <script src="lottie-interactive.js"></script>
+</html>
