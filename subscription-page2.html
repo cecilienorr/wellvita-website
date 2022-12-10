@@ -16,14 +16,102 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="menu-icon">
+
+                <img src="/assets/menu.png" alt="menu">
+            </div>
+            <div class="logo">
+                <img src="/assets/logo.png" alt="logo">
+            </div>
+            <div class="nav-items">
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kundehistorier</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Kontakt os</a></li>
+                <li><a href="#">Din tryghed</a></li>
+            </div>
+
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+
+            <div class="cancel-icon">
+
+                <img src="/assets/cross.png" alt="exit">
+            </div>
+
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search" required>
+
+                    <button type="submit" class="fas fa-search"></button>
+
+
+                </form>
+
+            </div>
+
+            <div class="nav-icons">
+                <img src="/assets/user.png" alt="user icon" onclick="toggleMenu()">
+                <img src="/assets/cart.png" alt="cart icon">
+
+
+            </div>
+
+        </nav>
+
+
+        <div class="dashboard-menu">
+
+            <h1 class="menu-title">Hi, Anne</h1>
+
+            <div class="scrollmenu">
+                <a href="#home" style="color:black">My Wellvita</a>
+                <a href="#news">Subscription</a>
+                <a href="#contact">Account Settings</a>
+                <a href="#about">Order history</a>
+                <div class="sign-out-a">
+                    <a href="#news">Sign out</a> </div>
+            </div>
+
+        </div>
+    </header>
 
     <main>
+        <section class="boost-health">
+
+            <div class="product-slider">
+
+                <div class="product">
+                    <img src="/assets/product-1.png" alt="product">
+                </div>
+
+                <div class="product">
+                    <img src="/assets/product-img-carousel.png" alt="product">
+                </div>
+
+                <div class="product-hide">
+                    <img src="/assets/product-2.png" alt="product">
+                </div>
+
+                <div class="product-hide">
+                    <img src="/assets/product-1.png" alt="product">
+                </div>
+            </div>
+
+        </section>
+
+
         <div class="box-4">
             <div class="box-1-div1">
-                <h4>Vitamin C & zink</h4>
+                <div class="media-q-1">
+                    <h4>Vitamin C & zink</h4>
+                    <p id="cursive-grey-1">Recommended to take daily</p>
+                </div>
                 <p>Essential for Women</p>
-                <p id="cursive-grey">Recommended to take daily</p>
+                <p id="cursive-grey-2">Recommended to take daily</p>
             </div>
 
             <div class="box-1-div2">
@@ -61,59 +149,71 @@
             </p>
         </div>
 
-        <!-- <div class="box-7">
-            <div class="box-7-div1">
-                <p id="ingrediens">Zinc</p>
-                <p>Jylland, Denmark</p>
-            </div>
-        </div> -->
-
-
         <div class="container-ingredients">
             <div class="text-ingredients">
-                <h3>Zink</h3>
+                <h3>Zinc</h3>
                 <p>Jylland Denmark</p>
             </div>
             <img src="/assets/zinc.png" class="image-ingredients" alt="picture of zinc">
         </div>
 
-
-        <section class="list-wrapper">
-            <div class="grey-line"></div>
-
-            <div class="list-item-wrapper">
-                <div class="list-bullet"></div>
-                <div class="list-item">
-                    <div class="list-title">Brain Health</div>
-                    <p class="list-text">
-                        Vitamin C mixed with X helps the brain promote red blood cells
-                    </p>
-                </div>
-        </section>
-
-        <section class="list-item-wrapper">
-            <div class="list-bullet"></div>
-            <div class="list-item">
-                <div class="list-title">Bone Health</div>
-                <p class="list-text">
-                    Vitamin C mixed with X helps the brain promote red blood cells
-                </p>
+        <div class="container-ingredients">
+            <div class="text-ingredients-2">
+                <h3>Vitamin C</h3>
+                <p>Sevilla, Spain</p>
             </div>
+            <img src="/assets/orange.png" class="image-ingredients" alt="picture of zinc">
+        </div>
+
+        <div class="container-ingredients">
+            <div class="text-ingredients-2">
+                <h3>Calcium</h3>
+                <p>Oslo, Norway</p>
             </div>
-        </section>
+            <img src="/assets/calicum.png" class="image-ingredients" alt="picture of zinc">
+        </div>
 
 
-        <section class="list-item-wrapper">
-            <div class="list-bullet"></div>
-            <div class="list-item">
-                <div class="list-title">Antioxidant Support</div>
-                <p class="list-text">
-                    Vitamin C mixed with X helps the brain promote red blood cells
-                </p>
+        <div class="two-row-grid">
+
+            <img src="/assets/fish-oil-vitamins.png" alt="picture of fish oil vitamins">
+
+
+            <div>
+                <section class="list-wrapper">
+                    <p id="benefits-list">Benefits</p>
+                    <div class="grey-line"></div>
+                    <div class="list-item-wrapper">
+                        <div class="list-bullet"></div>
+                        <div class="list-item">
+                            <div class="list-title">Brain Health</div>
+                            <p class="list-text">
+                                Vitamin C mixed with X helps the brain promote red blood cells
+                            </p>
+                        </div>
+                </section>
+                <section class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <div class="list-title">Bone Health</div>
+                        <p class="list-text">
+                            Vitamin C mixed with X helps the brain promote red blood cells
+                        </p>
+                    </div>
+                </section>
+                <section class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <div class="list-title">Antioxidant Support</div>
+                        <p class="list-text">
+                            Vitamin C mixed with X helps the brain promote red blood cells
+                        </p>
+                    </div>
+                    <div class="white-line"></div>
+                </section>
             </div>
-            <div class="white-line"></div>
-            </div>
-            </div>
+        </div>
+
 
     </main>
 
