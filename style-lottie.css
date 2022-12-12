@@ -14,3 +14,7 @@ p {
 /* .lottie {
   background-color: red;
 } */
+#animationWindow {
+  width: 100%;
+  height: 100%;
+}
