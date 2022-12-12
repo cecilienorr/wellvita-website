@@ -1,158 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in or sign up | Wellvita</title>
+    <meta
+      name="description"
+      content="
+    Log in or sign up securely with your e-mail/mobile or with Google or Facebook here »"
+    />
 
     <!--CSS-->
-    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="style_login.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!--Boxicons CSS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-  
-
+  <body>
     <nav>
-        <div class="menu-icon">
-          
-           <img src="/assets/menu.png" alt="menu">
-        </div>
-        <div class="logo">
-           <img src="/assets/logo.png" alt="logo">
-        </div>
-        <div class="nav-items">
-           <li><a href="#">Produkter</a></li>
-           <li><a href="#">Kundehistorier</a></li>
-           <li><a href="#">Om os</a></li>
-           <li><a href="#">Kontakt os</a></li>
-           <li><a href="#">Din tryghed</a></li>
-        </div>
+      <div class="menu-icon">
+        <img src="/assets/menu.png" alt="menu" />
+      </div>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="logo" />
+      </div>
+      <div class="nav-items">
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kundehistorier</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Kontakt os</a></li>
+        <li><a href="#">Din tryghed</a></li>
+      </div>
 
-        <div class="search-icon">
-         <span class="fas fa-search"></span>
-        </div>
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
 
-        <div class="cancel-icon">
-         
-           <img src="/assets/cross.png" alt="exit">
-        </div>
+      <div class="cancel-icon">
+        <img src="/assets/cross.png" alt="exit" />
+      </div>
 
-        <div class="search-bar">
+      <div class="search-bar">
         <form action="#">
-           <input type="search" class="search-data" placeholder="Search" required>
-           
-           <button type="submit" class="fas fa-search"></button>
-        
-        
-         </form>
+          <input
+            type="search"
+            class="search-data"
+            placeholder="Search"
+            required
+          />
 
-         </div>
-      
-         <div class="nav-icons">
-            <img src="/assets/user.png" alt="xx" onclick="toggleMenu()">
-           <img src="/assets/cart.png" alot="xx">
-    
-            
-          </div>
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+      </div>
 
-          <div class="sub-menu-wrap" id="subMenu">
-             <div class="sub-menu">
-                
-                 <a href="#" class="sub-menu-link">
-                     <p>My Wellvita</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Account details</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Subscription</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Order history</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Sign Out </p>
-                 </a>
-             </div>
-         </div>
+      <div class="nav-icons">
+        <img src="/assets/user.png" alt="xx" onclick="toggleMenu()" />
+        <img src="/assets/cart.png" alot="xx" />
+      </div>
 
-     </nav>
-   
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <a href="#" class="sub-menu-link">
+            <p>My Wellvita</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Account details</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Subscription</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Order history</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Sign Out</p>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-  <section class="container forms">
-    <div class="form login">
+    <section class="container forms">
+      <div class="form login">
         <div class="form-content">
-            <header>Login/Signup</header>
-            <form action="#">
-                <p>Enter your email/mobile and we will send you a login code</p>
+          <header>Login/Signup</header>
+          <form action="#">
+            <p>Enter your email/mobile and we will send you a login code</p>
 
-                <div class="field input-field">
-                   <input type="email" placeholder="Email or mobile" class="input">
-                </div>
+            <div class="field input-field">
+              <input type="email" placeholder="Email or mobile" class="input" />
+            </div>
 
-                 <!-- 
+            <!-- 
 
                 <div class="field input-field">
                     <input type="password" placeholder="Password" class="password">
                  </div> -->
 
-                 <!-- 
+            <!-- 
                     <div class="form-link">
                     <a href="#" class="forgot-pass">Forgot password?</a>
                  </div>   -->
 
-                 <div class="field button-field">
-                    <button><a href="login-step2.html">Continue</a></button>
-                 </div>
+            <div class="field button-field">
+              <button><a href="login-step2.html">Continue</a></button>
+            </div>
 
-                   <!--  <div class="form-link">
+            <!--  <div class="form-link">
                     <span> Already have an account? <a href="#" class="singup-link">Sign  up</a></span>
                  </div> -->
-                 
-            </form>
+          </form>
         </div>
 
         <div class="line"></div>
 
         <div class="media-options">
-            <a href="#" class="field facebook">
-            <i class='bx bxl-facebook-circle facebook-icon'></i>
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook-circle facebook-icon"></i>
             <span>Sign in with Facebook</span>
-        </a>
+          </a>
         </div>
 
         <div class="media-options">
-            <a href="#" class="field google">
-            <img src="/assets-login/google-logo.png" alt="google-logo" class="google-img">
+          <a href="#" class="field google">
+            <img
+              src="/assets-login/google-logo.png"
+              alt="google-logo"
+              class="google-img"
+            />
             <span>Sign in with Google</span>
-        </a>
+          </a>
         </div>
+      </div>
+    </section>
 
-
-
-
-
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
