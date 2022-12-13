@@ -698,9 +698,10 @@ div.scrollmenu {
   }
 
 
-  .score-benefits img {
+  .score-benefits .infographic {
     max-width: 150px;
     padding-top: 28px;
+   
   }
 
   .intro-healthscore p {

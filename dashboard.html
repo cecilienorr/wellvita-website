@@ -115,10 +115,36 @@
 
         <h1>Your <u><i>Health Score</i></u></h1>
 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
 
  <div class="top-section-score">
         <div class="score-benefits">
-            <div class="infographic"><img src="/assets/infographic.png" alt="infographic"></div>
+            <div class="infographic">
+            <lottie-player
+            src="animations/health-score.json"
+            background="transparent"
+            speed="1"
+            style="width: 185px; height: 185px"
+            autoplay
+          ></lottie-player>
+
+          <script>
+            LottieInteractivity.create({
+              player: "#toggleLottie",
+              mode: "cursor",
+              actions: [
+                {
+                  type: "toggle",
+                },
+              ],
+            });
+          </script>
+          <script src="scripts-lottie.js"></script>
+          <script src="lottie-interactive.js"></script>
+          </div>
             <div class="benefits"> 
                 <ul>
                     <p>Improve with:</p>
