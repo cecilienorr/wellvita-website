@@ -942,6 +942,7 @@ hr {
 
 .product img {
   max-width: 248px;
+  border-radius: 0;
 }
 
 .product-hide img {
@@ -1157,6 +1158,10 @@ h4 {
   left: 15px;
 }
 
+#popup1 {
+  display: none;
+}
+
 @media (min-width: 640px) {
   main {
     margin-left: 150px;
@@ -1195,6 +1200,7 @@ h4 {
 
   .product img {
     max-width: 490px;
+    border-radius: 0;
   }
 
   .boost-health {
