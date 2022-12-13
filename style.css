@@ -171,8 +171,8 @@ form {
   padding: 0px;
   gap: 30px;
   position: absolute;
-  width: 50vw;
-  left: 17px;
+  width: 80vw;
+  left: 40px;
 }
 
 fieldset {
@@ -181,7 +181,7 @@ fieldset {
 
 .wrapper-account {
   display: grid;
-  width: 356px;
+  width: 80vw;
   grid-template-columns: 1fr;
   border: 0;
 }
@@ -256,7 +256,7 @@ hr {
 } */
 
 .content {
-  display: none;
+  /* display: none; */
   overflow: hidden;
 }
 
@@ -272,6 +272,12 @@ hr {
 
 .specifyColor-account {
   accent-color: grey;
+}
+
+.arrow {
+  width: 25px;
+
+  transition: all 0.2s ease-out;
 }
 
 /* --------------------ACCOUNT SETTINGS ENDS --------------------------- */
@@ -326,6 +332,7 @@ hr {
     display: inline-flex;
     margin-left: 200px;
     margin-top: 90px;
+    width: 70vw;
   }
 
   input[type="text"] {

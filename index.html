@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="landing-page">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,12 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono|Work+Sans:400,700&display=swap"
       rel="stylesheet"
     />
-    <title>Sundhedstest</title>
+    <title>Sundhedstesten | Styrk dit helbred | Wellvita</title>
+    <meta
+      name="description"
+      content="
+      Tag Wellvitas sundhedstest og styrk dit helbred. Få en skræddersyet anbefaling og føl dig ung igen med dine helt nye vitaminer!"
+    />
   </head>
 
   <body>
@@ -19,19 +24,50 @@
       /></a>
     </nav>
 
-    <article>
-    <div class="wrapper">
-        <section> <h1 class="h1-campaign">Tag vores sundhedstest og få din helsescore</h1>
-            <p class="p-campaign">
-              Tag vores sundhedtest og få styr på dit helbred. Føl dig ung igen med
-              dine helt nye vitaminer!
-            </p>
-            <a href="quiz.html" class="knap">Tag testen</a>
-          </section> 
-        <div class="box box1"><img src="assets/landing-page-bg-vol3.png" alt="illustration" class="bg"></div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
+    <article class="article-campaign">
+      <section class="section-campaign">
+        <h1 class="h1-campaign">
+          Tag vores sundhedstest og få din sundhedsscore
+        </h1>
+        <p class="p-campaign">
+          Tag vores sundhedtest og styrk dit helbred. Føl dig ung igen med dine
+          helt nye vitaminer!
+        </p>
+        <a href="quiz.html" class="knap">TAG TESTEN NU</a>
+      </section>
+      <div class="#MyContainerId">
+        <lottie-player
+          src="animations/wellvita.json"
+          background="transparent"
+          speed="1"
+          id="cult"
+          loop
+        ></lottie-player>
+        <script>
+          LottieInteractivity.create({
+            player: "#cult",
+            mode: "scroll",
+            actions: [
+              // {
+              //   state: "loop",
+              //   visibility: [0, 1.0],
+              //   type: "seek",
+              //   frames: [50, 1000],
+              // },
+              {
+                visibility: [0, 1.0],
+                type: "play",
+                frames: [100, 1000],
+              },
+            ],
+          });
+        </script>
+      </div>
     </article>
-
   </body>
+  <script src="lottie-interactive.js"></script>
 </html>

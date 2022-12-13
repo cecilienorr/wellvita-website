@@ -1,139 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Enter your code | Wellvita</title>
+    <meta
+      name="description"
+      content="
+      Login securely with your personal 6-digit code.  »"
+    />
 
     <!--CSS-->
-    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="style_login.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!--Boxicons CSS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-
-
+  <body>
     <nav>
-        <div class="menu-icon">
-          
-           <img src="/assets/menu.png" alt="menu">
-        </div>
-        <div class="logo">
-           <img src="/assets/logo.png" alt="logo">
-        </div>
-        <div class="nav-items">
-           <li><a href="#">Produkter</a></li>
-           <li><a href="#">Kundehistorier</a></li>
-           <li><a href="#">Om os</a></li>
-           <li><a href="#">Kontakt os</a></li>
-           <li><a href="#">Din tryghed</a></li>
-        </div>
+      <div class="menu-icon">
+        <img src="/assets/menu.png" alt="menu" />
+      </div>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="logo" />
+      </div>
+      <div class="nav-items">
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kundehistorier</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Kontakt os</a></li>
+        <li><a href="#">Din tryghed</a></li>
+      </div>
 
-        <div class="search-icon">
-         <span class="fas fa-search"></span>
-        </div>
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
 
-        <div class="cancel-icon">
-         
-           <img src="/assets/cross.png" alt="exit">
-        </div>
+      <div class="cancel-icon">
+        <img src="/assets/cross.png" alt="exit" />
+      </div>
 
-        <div class="search-bar">
+      <div class="search-bar">
         <form action="#">
-           <input type="search" class="search-data" placeholder="Search" required>
-           
-           <button type="submit" class="fas fa-search"></button>
-        
-        
-         </form>
+          <input
+            type="search"
+            class="search-data"
+            placeholder="Search"
+            required
+          />
 
-         </div>
-      
-         <div class="nav-icons">
-            <img src="/assets/user.png" alt="xx" onclick="toggleMenu()">
-           <img src="/assets/cart.png" alot="xx">
-    
-            
-          </div>
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+      </div>
 
-          <div class="sub-menu-wrap" id="subMenu">
-             <div class="sub-menu">
-                
-                 <a href="#" class="sub-menu-link">
-                     <p>My Wellvita</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Account details</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Subscription</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Order history</p>
-                 </a>
-                 <hr>
-                 <a href="#" class="sub-menu-link">
-                     <p>Sign Out </p>
-                 </a>
-             </div>
-         </div>
+      <div class="nav-icons">
+        <img src="/assets/user.png" alt="xx" onclick="toggleMenu()" />
+        <img src="/assets/cart.png" alot="xx" />
+      </div>
 
-     </nav>
-      
-
-
-
-  <section class="container-code forms">
-    <div class="form login">
-        <div class="form-content">
-            <header>Enter code</header>
-            <form action="#">
-                <p>Sent to name@gmail.com</p>
-
-                <div class="field input-field">
-                   <input type="number" placeholder="6-digit code" class="input">
-                </div>
-
-                 
-
-                
-
-                  
-
-                 <div class="field button-field">
-                    <button><a href="dashboard.html">Continue</a></button>
-                 </div>
-
-                   <div class="form-link">
-                    <span> <a href="login.html" class="singup-link">Start new login</a></span>
-                 </div> 
-                 
-            </form>
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <a href="#" class="sub-menu-link">
+            <p>My Wellvita</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Account details</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Subscription</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Order history</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Sign Out</p>
+          </a>
         </div>
+      </div>
+    </nav>
 
-      
+    <section class="container-code forms">
+      <div class="form login">
+        <div class="form-content">
+          <header>Enter code</header>
+          <form action="#">
+            <p>Sent to name@gmail.com</p>
 
+            <div class="field input-field">
+              <input type="number" placeholder="6-digit code" class="input" />
+            </div>
 
+            <div class="field button-field">
+              <button><a href="dashboard.html">Continue</a></button>
+            </div>
 
-    </div>
-  </section>
+            <div class="form-link">
+              <span>
+                <a href="login.html" class="singup-link"
+                  >Start new login</a
+                ></span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

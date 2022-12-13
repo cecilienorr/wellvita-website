@@ -698,9 +698,10 @@ div.scrollmenu {
   }
 
 
-  .score-benefits img {
+  .score-benefits .infographic {
     max-width: 150px;
     padding-top: 28px;
+   
   }
 
   .intro-healthscore p {
@@ -1051,7 +1052,7 @@ div.scrollmenu {
         margin-right: 17px;
         background: url(/assets/upsell-product.png);
         background-size: 100%;
-        height: 320px;
+        height: 350px;
 
     }
 
@@ -1113,7 +1114,7 @@ div.scrollmenu {
      
         background: url(/assets/hand-vitamin.png);
         background-size: 100%;
-        height: 350px;
+        height: 212px;
  
      }
 
@@ -1122,6 +1123,7 @@ div.scrollmenu {
         background-color: #F2F2F2;
         margin-left: 0px;
         margin-right: 0px;
+        height: 350px;
      }
 
      .product-upsell {
@@ -1132,7 +1134,9 @@ div.scrollmenu {
         margin-right: 0px;
         background: url(/assets/upsell-product.png);
         background-size: 100%;
-        height: auto;
+        height: 350px;
+        
+      ;
 
     }
   }
