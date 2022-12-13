@@ -168,12 +168,25 @@ section {
 
 .knap {
   text-decoration: none;
-  background-color: white;
-  padding-right: 50px;
-  padding-left: 50px;
+  background-color: #d2cbc5;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
   color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.take-test-button {
+  font-size: 20px;
+  border: none;
+  background-color: #d2cbc5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .knap:hover {
@@ -206,6 +219,30 @@ section {
 }
 
 .wrapper {
+  background-color: #f0e3c6;
+  border-radius: 13px;
+  margin: 30px;
+
+  height: 100vh;
+}
+
+/* .landing-page {
+  background-color: #f0e3c6;
+} */
+
+#cult {
+  width: 500px;
+  height: 500px;
+  margin-left: -90px;
+}
+.MyContainerId {
+  background-color: red;
+}
+.section-campaign {
+  background-color: transparent;
+}
+
+.article-campaign {
   background-color: #f0e3c6;
   border-radius: 13px;
   margin: 30px;
@@ -262,6 +299,12 @@ section {
   }
   .wrapper {
     margin: 60px;
+  }
+
+  #cult {
+    width: 1000px;
+    height: 1000px;
+    margin-left: 300px;
   }
 }
 

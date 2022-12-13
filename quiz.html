@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style-quiz.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono|Work+Sans:400,700&display=swap" rel="stylesheet">
-    <title>Sundhedstest</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Sundhedstest | Tag testen | Wellvita</title>
+    <meta
+      name="description"
+      content="
+      Nysgerrig på din sundhedsscore? Tag vores sundhedstest, få anbefalede plantebaserede vitaminer og styrk dit helbred i dag »"
+    />
   </head>
   <body>
     <nav>
@@ -19,7 +25,7 @@
         </p>
         <div>
         <!-- ------------------Personal Details---------------------------- -->
-        <fieldset class="grey_fieldset">
+        <fieldset class="grey_fieldset" data-aos="fade-up" >
           <legend>LIDT OM DIG</legend>      
           <label for="date-label">ALDER</label>
           <hr class="line">
@@ -29,7 +35,7 @@
         </fieldset>
 
         <!--GENDER-->
-        <fieldset>
+        <fieldset data-aos="fade-up" >
         <div>
           <label for="Gender">KØN</label>
           <hr class="line">
@@ -44,7 +50,7 @@
 
         <!--WEIGHT AND HEIGHT-->
 
-    <fieldset class="grey_fieldset">
+    <fieldset class="grey_fieldset" data-aos="fade-up" >
         <label for="Weight">VÆGT</label>
         <hr class="line">
         
@@ -57,7 +63,7 @@
 
     <!--ALCOHOL HABITS -->
 
-    <fieldset>
+    <fieldset data-aos="fade-up" >
         <div>
           <label for="alcohol-consume">HVOR MANGE GENSTANDE 
             ALKOHOL PER UGE DRIKKER DU?</label>
@@ -76,7 +82,7 @@
 
     <!--MENSTRUATION-->
 
-    <fieldset class="grey_fieldset">
+    <fieldset class="grey_fieldset" data-aos="fade-up" >
         <div>
           <label for="menstruation">HAR DU REGELMÆSSIG
             MENSTRUATIONSCYKLUS?</label>
@@ -97,7 +103,7 @@
     
 
         <!--Vegetarian-->
-        <fieldset>
+        <fieldset data-aos="fade-up" >
             <legend>KOSTHOLD</legend>
             <div>
               <label for="vegetables">KLIK PÅ DEN, DER BESKRIVER DIG BEDST</label>
@@ -119,7 +125,7 @@
     
 
  <!--Food allergies-->
-    <fieldset class="grey_fieldset">
+    <fieldset class="grey_fieldset" data-aos="fade-up" >
         <div>
           <label for="food-allergies">HAR DU NOGEN MADALLERGIER?</label>
           <hr class="line">
@@ -134,7 +140,7 @@
     </fieldset>
 
      <!--Vegetables-->
-     <fieldset>
+     <fieldset data-aos="fade-up" >
         <div>
           <label for="vegetables">HVOR MANGE FRUGTER ELLER
             GRØNTSAGER SPISER DU DAGLIGT?</label>
@@ -155,7 +161,7 @@
 
 
          <!--Water-->
-         <fieldset class="grey_fieldset">
+         <fieldset class="grey_fieldset" data-aos="fade-up" >
             <div>
               <label for="vegetables">HVOR MEGET VAND DRIKKER
                 DU DAGLIGT?</label>
@@ -174,7 +180,7 @@
         </fieldset>
 
              <!--Fish-->
-     <fieldset>
+     <fieldset data-aos="fade-up" >
         <div>
           <label for="vegetables">HVOR MANGE GANGER I UGEN
             SPISER DU FISK?</label>
@@ -199,7 +205,7 @@
     
 
         <!--Transportation-->
-        <fieldset class="grey_fieldset">
+        <fieldset class="grey_fieldset" data-aos="fade-up" >
             <legend>BEVÆGELSE</legend>
             <hr class="line">
             <div>
@@ -219,7 +225,7 @@
         </fieldset>
 
                 <!--fitness-->
-                <fieldset>
+                <fieldset data-aos="fade-up" >
                     <div>
                       <label for="ftiness">HVOR MANGE GANGER OM UGEN TRÆNER DU STYRKE?</label>
                       <hr class="line">
@@ -239,7 +245,7 @@
 
 
                 <!--cardio-->
-                <fieldset class="grey_fieldset">
+                <fieldset class="grey_fieldset" data-aos="fade-up" >
                     <div>
                       <label for="cardio">HVOR MANGE GANGER OM UGEN TRÆNER DU CARDIO?</label>
                       <p>
@@ -263,13 +269,16 @@
   
 
         <div id="submitbutton">
-          <a href="index.html" class="knap">Få din helse score</a>
+          <a href="dashboard.html" class="knap">Få din helse score</a>
         </div>
       </form>
     </div>
 
     <script src="scripts.js"></script>
-    <script src="lottie-interactive.js"></script>
-    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 200, duration: 1000 });
+    </script>
   </body>
 </html>

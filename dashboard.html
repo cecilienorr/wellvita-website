@@ -1,321 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="style_login.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!--Boxicons CSS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div id="preloader"></div>
 
     <nav>
-        <div class="menu-icon">
+      <div class="menu-icon">
+        <img src="/assets/menu.png" alt="menu" />
+      </div>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="logo" />
+      </div>
+      <div class="nav-items">
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kundehistorier</a></li>
+        <li><a href="#">Om os</a></li>
+        <li><a href="#">Kontakt os</a></li>
+        <li><a href="#">Din tryghed</a></li>
+      </div>
 
-            <img src="/assets/menu.png" alt="menu">
+      <div class="search-icon">
+        <span class="fas fa-search"></span>
+      </div>
+
+      <div class="cancel-icon">
+        <img src="/assets/cross.png" alt="exit" />
+      </div>
+
+      <div class="search-bar">
+        <form action="#">
+          <input
+            type="search"
+            class="search-data"
+            placeholder="Search"
+            required
+          />
+
+          <button type="submit" class="fas fa-search"></button>
+        </form>
+      </div>
+
+      <div class="nav-icons">
+        <img src="/assets/user.png" alt="xx" onclick="toggleMenu()" />
+        <img src="/assets/cart.png" alot="xx" />
+      </div>
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <a href="#" class="sub-menu-link">
+            <p>My Wellvita</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Account details</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Subscription</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Order history</p>
+          </a>
+          <hr />
+          <a href="#" class="sub-menu-link">
+            <p>Sign Out</p>
+          </a>
         </div>
-        <div class="logo">
-            <img src="/assets/logo.png" alt="logo">
-        </div>
-        <div class="nav-items">
-            <li><a href="#">Produkter</a></li>
-            <li><a href="#">Kundehistorier</a></li>
-            <li><a href="#">Om os</a></li>
-            <li><a href="#">Kontakt os</a></li>
-            <li><a href="#">Din tryghed</a></li>
-        </div>
-
-        <div class="search-icon">
-            <span class="fas fa-search"></span>
-        </div>
-
-        <div class="cancel-icon">
-
-            <img src="/assets/cross.png" alt="exit">
-        </div>
-
-        <div class="search-bar">
-            <form action="#">
-                <input type="search" class="search-data" placeholder="Search" required>
-
-                <button type="submit" class="fas fa-search"></button>
-
-
-            </form>
-
-        </div>
-
-        <div class="nav-icons">
-            <img src="/assets/user.png" alt="xx" onclick="toggleMenu()">
-            <img src="/assets/cart.png" alot="xx">
-
-
-        </div>
-
-        <div class="sub-menu-wrap" id="subMenu">
-            <div class="sub-menu">
-
-                <a href="#" class="sub-menu-link">
-                    <p>My Wellvita</p>
-                </a>
-                <hr>
-                <a href="#" class="sub-menu-link">
-                    <p>Account details</p>
-                </a>
-                <hr>
-                <a href="#" class="sub-menu-link">
-                    <p>Subscription</p>
-                </a>
-                <hr>
-                <a href="#" class="sub-menu-link">
-                    <p>Order history</p>
-                </a>
-                <hr>
-                <a href="#" class="sub-menu-link">
-                    <p>Sign Out </p>
-                </a>
-            </div>
-        </div>
-
+      </div>
     </nav>
 
     <div class="dashboard-menu">
+      <h1 class="menu-title">Hi, Anne</h1>
 
-        <h1 class="menu-title">Hi, Anne</h1>
-
-        <div class="scrollmenu">
-            <a href="#home" style="color:black">My Wellvita</a>
-            <a href="#news">Subscription</a>
-            <a href="#contact">Account Settings</a>
-            <a href="#about">Order history</a>
-            <div class="sign-out-a">
-                <a href="#news">Sign out</a> </div>
+      <div class="scrollmenu">
+        <a href="#home" style="color: black">My Wellvita</a>
+        <a href="#news">Subscription</a>
+        <a href="#contact">Account Settings</a>
+        <a href="#about">Order history</a>
+        <div class="sign-out-a">
+          <a href="#news">Sign out</a>
         </div>
-
+      </div>
     </div>
 
     <div class="your-health-score">
+      <h1>
+        Your <u><i>Health Score</i></u>
+      </h1>
 
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-        <h1>Your <u><i>Health Score</i></u></h1>
+      <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
+      <div class="top-section-score">
+        <div class="score-benefits">
+          <div class="infographic">
+            <lottie-player
+              src="animations/health-score.json"
+              background="transparent"
+              speed="1"
+              style="width: 185px; height: 185px"
+              autoplay
+            ></lottie-player>
 
-        <div class="top-section-score">
-            <div class="score-benefits">
-                <div class="infographic"><img src="/assets/infographic.png" alt="infographic"></div>
-                <div class="benefits">
-                    <ul>
-                        <p>Improve with:</p>
-                        <li>Magnesium</li>
-                        <li>C-Zinc</li>
-                        <li>D-Vitamin</li>
-                        <li>Fish oil</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="retake-button">
-                <button>RETAKE TEST</button>
-            </div>
-
-        </div>
-
-        <div class="pros-cons">
-
-            <div class="well">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <g fill="none" stroke="black" stroke-linecap="round" stroke-width="1.5">
-                        <path
-                            d="M16.472 20H4.1a.6.6 0 0 1-.6-.6V9.6a.6.6 0 0 1 .6-.6h2.768a2 2 0 0 0 1.715-.971l2.71-4.517a1.631 1.631 0 0 1 2.961 1.308l-1.022 3.408a.6.6 0 0 0 .574.772h4.575a2 2 0 0 1 1.93 2.526l-1.91 7A2 2 0 0 1 16.473 20Z" />
-                        <path stroke-linejoin="round" d="M7 20V9" />
-                    </g>
-                </svg>
-                <h2>What you do well</h2>
-            </div>
-
+            <script>
+              LottieInteractivity.create({
+                player: "#toggleLottie",
+                mode: "cursor",
+                actions: [
+                  {
+                    type: "toggle",
+                  },
+                ],
+              });
+            </script>
+            <script src="scripts-lottie.js"></script>
+            <script src="lottie-interactive.js"></script>
+          </div>
+          <div class="benefits">
             <ul>
-                <li>Something that they have going for them like exercise</li>
-                <li>Something that they have going for them like exercise</li>
+              <p>Improve with:</p>
+              <li>Magnesium</li>
+              <li>C-Zinc</li>
+              <li>D-Vitamin</li>
+              <li>Fish oil</li>
             </ul>
-
-            <div class="improve">
-                <svg width="20" height="20" viewBox="0 0 24 24">
-                    <g fill="none" stroke="black" stroke-linecap="round" stroke-width="1.5">
-                        <path
-                            d="M16.472 3.5H4.1a.6.6 0 0 0-.6.6v9.8a.6.6 0 0 0 .6.6h2.768a2 2 0 0 1 1.715.971l2.71 4.517a1.631 1.631 0 0 0 2.961-1.308l-1.022-3.408a.6.6 0 0 1 .574-.772h4.575a2 2 0 0 0 1.93-2.526l-1.91-7A2 2 0 0 0 16.473 3.5Z" />
-                        <path stroke-linejoin="round" d="M7 14.5v-11" />
-                    </g>
-                </svg>
-                <h2> What needs improvement</h2>
-            </div>
-
-            <ul>
-                <li>Something that they do not have going for them like exercise</li>
-                <li>Something that they do not have going for them like exercise</li>
-                <li>Something that they do not have going for them like exercise</li>
-
-            </ul>
-
-
+          </div>
         </div>
 
-        <div class="see-results-button">
-            <button> <a href="health-score.html">SEE RESULTS HERE</a>
+        <div class="retake-button">
+          <button>RETAKE TEST</button>
+        </div>
+      </div>
 
-            </button>
+      <div class="pros-cons">
+        <div class="well">
+          <svg width="20" height="20" viewBox="0 0 24 24">
+            <g
+              fill="none"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-width="1.5"
+            >
+              <path
+                d="M16.472 20H4.1a.6.6 0 0 1-.6-.6V9.6a.6.6 0 0 1 .6-.6h2.768a2 2 0 0 0 1.715-.971l2.71-4.517a1.631 1.631 0 0 1 2.961 1.308l-1.022 3.408a.6.6 0 0 0 .574.772h4.575a2 2 0 0 1 1.93 2.526l-1.91 7A2 2 0 0 1 16.473 20Z"
+              />
+              <path stroke-linejoin="round" d="M7 20V9" />
+            </g>
+          </svg>
+          <h2>What you do well</h2>
         </div>
 
+        <ul>
+          <li>Something that they have going for them like exercise</li>
+          <li>Something that they have going for them like exercise</li>
+        </ul>
+
+        <div class="improve">
+          <svg width="20" height="20" viewBox="0 0 24 24">
+            <g
+              fill="none"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-width="1.5"
+            >
+              <path
+                d="M16.472 3.5H4.1a.6.6 0 0 0-.6.6v9.8a.6.6 0 0 0 .6.6h2.768a2 2 0 0 1 1.715.971l2.71 4.517a1.631 1.631 0 0 0 2.961-1.308l-1.022-3.408a.6.6 0 0 1 .574-.772h4.575a2 2 0 0 0 1.93-2.526l-1.91-7A2 2 0 0 0 16.473 3.5Z"
+              />
+              <path stroke-linejoin="round" d="M7 14.5v-11" />
+            </g>
+          </svg>
+          <h2>What needs improvement</h2>
+        </div>
+
+        <ul>
+          <li>Something that they do not have going for them like exercise</li>
+          <li>Something that they do not have going for them like exercise</li>
+          <li>Something that they do not have going for them like exercise</li>
+        </ul>
+      </div>
+
+      <div class="see-results-button">
+        <button><a href="health-score.html">SEE RESULTS HERE</a></button>
+      </div>
     </div>
-
-
-
-
-
-
 
     <!------ Product slider ------>
     <section class="boost-health">
-        <h2 class="product-category">Boost your health with...</h2>
-        <hr>
+      <h2 class="product-category">Boost your health with...</h2>
+      <hr />
 
-        <div class="product-slider">
-
-            <div class="product">
-                <img src="/assets/product-1.png" alt="product">
-                <h3>Vitamin C & zink</h3>
-                <p>Essential for Women</p>
-            </div>
-
-            <div class="product">
-                <img src="/assets/product-2.png" alt="product">
-                <h3>Vitamin C & zink</h3>
-                <p>Essential for Women</p>
-            </div>
-
-            <div class="product">
-                <img src="/assets/product-1.png" alt="product">
-                <h3>Vitamin C & zink</h3>
-                <p>Essential for Women</p>
-            </div>
-
-            <div class="product">
-                <img src="/assets/product-2.png" alt="product">
-                <h3>Vitamin C & zink</h3>
-                <p>Essential for Women</p>
-            </div>
-
-
-
+      <div class="product-slider">
+        <div class="product">
+          <img src="/assets/product-1.png" alt="product" />
+          <h3>Vitamin C & zink</h3>
+          <p>Essential for Women</p>
         </div>
 
+        <div class="product">
+          <img src="/assets/product-2.png" alt="product" />
+          <h3>Vitamin C & zink</h3>
+          <p>Essential for Women</p>
+        </div>
+
+        <div class="product">
+          <img src="/assets/product-1.png" alt="product" />
+          <h3>Vitamin C & zink</h3>
+          <p>Essential for Women</p>
+        </div>
+
+        <div class="product">
+          <img src="/assets/product-2.png" alt="product" />
+          <h3>Vitamin C & zink</h3>
+          <p>Essential for Women</p>
+        </div>
+      </div>
     </section>
 
     <section class="info-blocks">
+      <div class="delivery-card">
+        <h2>Vitamins arriving soon!</h2>
+        <p>
+          Your vitamins are arriving between the
+          <i><u>25-30th</u> of November</i>
+        </p>
 
-        <div class="delivery-card">
+        <div class="delivery-img"></div>
+      </div>
 
-            <h2>Vitamins arriving soon!</h2>
-            <p>Your vitamins are arriving between the <i><u>25-30th</u> of November</i></p>
+      <div class="product-upsell">
+        <h2>
+          The <i>Wellvita way</i> of <br />
+          storing vitamins
+        </h2>
+        <p>
+          Get <u>organised </u> with <br />your brand new <br />
+          vitamin organiser!
+        </p>
 
-            <div class="delivery-img">
-
-            </div>
-
-        </div>
-
-
-
-        <div class="product-upsell">
-
-            <h2>The <i>Wellvita way</i> of <br> storing vitamins</h2>
-            <p>Get <u>organised </u> with <br>your brand new <br> vitamin organiser!</p>
-
-            <button>Buy Organiser</button>
-
-
-        </div>
-
+        <button>Buy Organiser</button>
+      </div>
     </section>
 
-
-
     <div class="testimonials">
-        <h2>In doubt?</h2>
-        <p>Find out why our customers trust us with their health and recommend us</p>
+      <h2>In doubt?</h2>
+      <p>
+        Find out why our customers trust us with their health and recommend us
+      </p>
 
-        <div class="testimonials-slider">
-
-            <div class="testimonial-1">
-
-                <h3>Vitamin C & zink</h3>
-
-            </div>
-
-            <div class="testimonial-2">
-
-                <h3>Vitamin C & zink</h3>
-
-            </div>
-
-            <div class="testimonial-3">
-
-                <h3>Vitamin C & zink</h3>
-
-            </div>
-
-            <div class="testimonial-4">
-
-                <h3>Vitamin C & zink</h3>
-
-            </div>
-
-
-
+      <div class="testimonials-slider">
+        <div class="testimonial-1">
+          <h3>Vitamin C & zink</h3>
         </div>
 
-        <h4>"Wellvita has helped me <i>take charge</i> of my health</h4>
+        <div class="testimonial-2">
+          <h3>Vitamin C & zink</h3>
+        </div>
 
+        <div class="testimonial-3">
+          <h3>Vitamin C & zink</h3>
+        </div>
 
+        <div class="testimonial-4">
+          <h3>Vitamin C & zink</h3>
+        </div>
+      </div>
 
+      <h4>"Wellvita has helped me <i>take charge</i> of my health</h4>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

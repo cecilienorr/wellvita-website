@@ -16,11 +16,12 @@
     </lottie-interactive> -->
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
     <section class="icons">
       <div>
         <lottie-player
-          class="lottie"
+          id="leaf-animation"
           src="animations/leaf-animation.json"
           background="transparent"
           speed="1"
@@ -95,18 +96,22 @@
       style="width: 200px; height: 200px"
       autoplay
     ></lottie-player>
+
+    <script>
+      LottieInteractivity.create({
+        player: "#leaf-animation",
+        mode: "scroll",
+        actions: [
+          {
+            visibility: [0, 1.0],
+            type: "seek",
+            frames: [0, 300],
+          },
+        ],
+      });
+    </script>
   </body>
-  <script>
-    LottieInteractivity.create({
-      player: "#toggleLottie",
-      mode: "cursor",
-      actions: [
-        {
-          type: "toggle",
-        },
-      ],
-    });
-  </script>
+
   <script src="scripts-lottie.js"></script>
   <script src="lottie-interactive.js"></script>
 </html>
