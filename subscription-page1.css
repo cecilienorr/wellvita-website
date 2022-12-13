@@ -219,6 +219,7 @@ nav .search-icon {
     border-bottom-color: #1e232b;
     margin: -20px 0 0;
   }
+
   nav form:after {
     position: absolute;
     content: "";
@@ -409,7 +410,7 @@ div.scrollmenu a:hover {
 
 .box-1 {
   width: 360px;
-  height: 650px;
+  height: 800px;
 
   background-color: #f9f7f6;
   border-radius: 13px;
@@ -417,10 +418,22 @@ div.scrollmenu a:hover {
   padding-top: 20px;
 }
 
+.flex-1 hr {
+  width: 90%;
+  justify-items: center;
+}
+
 .d-vitamin-flex-1 {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+#edit-text {
+  display: none;
 }
 
 .d-vitamin-flex-1 p {
@@ -502,6 +515,9 @@ hr {
   font-size: 18px;
   font-weight: 500;
   padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
 }
 
 /* DROPDOWN BUTTON */
@@ -670,7 +686,7 @@ hr {
 
 .box-2 {
   width: 360px;
-  height: 650px;
+  height: 800px;
 
   background-color: #f9f7f6;
   border-radius: 13px;
@@ -743,6 +759,7 @@ hr {
   padding-left: 70px;
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .flex-3 {
@@ -792,9 +809,11 @@ hr {
 
   .box-1 {
     width: 890px;
-    height: 650px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: #1e232b solid 1px;
+    border-radius: 0;
   }
 
   .box-1-top {
@@ -813,6 +832,94 @@ hr {
 
   hr {
     display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .box-2 {
+    width: 890px;
+    height: 300px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0;
+  }
+
+  .box-2-top {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+
+  .box-3 {
+    width: 840px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+
+  #paused-text {
+    font-size: 38px;
+  }
+
+  #start-text {
+    padding-left: 500px;
+  }
+
+  #edit-text {
+    display: inline;
+    text-decoration: underline;
+    color: black;
+    padding-left: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  /* ------------------------------- */
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    height: 800px;
+    width: 70%;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
   }
 }
 
@@ -991,22 +1098,6 @@ h4 {
   width: 130px;
   height: 130px;
 }
-
-/* .container-ingredients {
-  display: flex;
-  margin-top: 40px;
-  background-color: #e5e3e269;
-  width: 100%;
-  height: 130px;
-} */
-
-/* .image-ingredients {
-  display: grid;
-  grid-template-rows: 100px 100px;
-  background-color: #e5e3e2;
-  width: 130px;
-  height: 130px;
-} */
 
 #benefits-list {
   color: #a4a4a4;
