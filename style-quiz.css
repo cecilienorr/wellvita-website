@@ -236,7 +236,7 @@ section {
   width: 900px;
   height: 900px;
   margin-left: -330px;
-  margin-top: 170px;
+  margin-top: 190px;
 }
 .animation-container {
   /* background-color: red; */
@@ -367,5 +367,31 @@ section {
 
   .wrapper {
     margin: 60px;
+  }
+  #cult {
+    width: 1000px;
+    height: 1000px;
+    margin-top: 0px;
+  }
+  .animation-container {
+    width: 80vw;
+    overflow: visible;
+    margin: auto;
+    margin-left: -2vw;
+  }
+  .section-campaign {
+    background-color: transparent;
+  }
+
+  .article-campaign {
+    background-color: #f0e3c6;
+    border-radius: 13px;
+    margin: auto;
+    width: 90vw;
+    height: 100vh;
+  }
+  .p-campaign {
+    margin-top: 0px;
+    max-width: 400px;
   }
 }
