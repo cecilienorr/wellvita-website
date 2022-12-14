@@ -160,7 +160,8 @@ form {
   font-weight: 400;
   border-radius: 0;
   border: 0;
-  color: #e1dedb;
+  color: black;
+  background-color: #d2cbc5;
   margin-top: 20px;
 }
 

@@ -19,10 +19,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    
 </head>
 
 <body>
-    <header>
+    <!-- <header> -->
         <nav>
             <div class="menu-icon">
 
@@ -83,7 +86,7 @@
             </div>
 
         </div>
-    </header>
+    <!-- </header> -->
 
     <main>
         <section class="boost-health">
@@ -132,19 +135,45 @@
 
         <div class="box-5">
             <div class="box-5-div1">
-                <img src="assets/plant-based-icon.png" alt="plant based icon">
+                <lottie-player
+                id="leaf-animation"
+                src="animations/leaf-animation.json"
+                background="transparent"
+                speed="1"
+                style="width: 100px; height: 100px"
+                autoplay
+                id="leaf"
+              ></lottie-player>
                 <p>Plant based</p>
             </div>
             <div class="box-5-div1">
-                <img src="assets/clinically-tested-icon.png" alt="Clinically tested icon">
+                <lottie-player
+                src="animations/kemi-animations.json"
+                background="transparent"
+                speed="1"
+                style="width: 100px; height: 100px"
+                autoplay
+              ></lottie-player>
                 <p>Clinically tested</p>
             </div>
             <div class="box-5-div1">
-                <img src="assets/waterdrop-icon.png" alt="No artificial colouring icon">
+                <lottie-player
+          src="animations/water-animation.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          autoplay
+        ></lottie-player>
                 <p>No artificial colouring</p>
             </div>
             <div class="box-5-div1">
-                <img src="assets/price-icon.png" alt="Best price icon">
+                <lottie-player
+                src="animations/coin-animation.json"
+                background="transparent"
+                speed="1"
+                style="width: 100px; height: 100px"
+                autoplay
+              ></lottie-player>
                 <p>Best price </p>
             </div>
         </div>
@@ -226,6 +255,21 @@
     <footer></footer>
 
     <script src="subscription-page1.js"></script>
+    <script>
+        LottieInteractivity.create({
+          player: "#leaf",
+          mode: "scroll",
+          actions: [
+            {
+              state: "loop",
+              visibility: [0, 1.0],
+              type: "seek",
+              frames: [0, 10],
+            },
+    
+          ],
+        });
+      </script>
 </body>
 
 </html>

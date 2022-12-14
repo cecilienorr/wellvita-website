@@ -1,3 +1,7 @@
+/* Google Fonts - Work Sans */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+
 main {
   font-family: "Work Sans", sans-serif;
   width: 375px;
@@ -416,6 +420,7 @@ div.scrollmenu a:hover {
   border-radius: 13px;
 
   padding-top: 20px;
+  margin-top: 30px;
 }
 
 .flex-1 hr {
@@ -662,6 +667,10 @@ hr {
   white-space: nowrap;
   margin-left: 158px;
   z-index: 0;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  font-family: "work sans";
 }
 
 .dd-button-3 {
@@ -682,6 +691,8 @@ hr {
   margin-left: 40%;
   margin-top: 10px;
   font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .box-2 {
@@ -791,6 +802,57 @@ hr {
   font-size: 18px;
 }
 
+/*POP UP*/
+
+#pop-up {
+  display: none; /* hide the pop-up by default */
+  position: fixed; /* position the pop-up in the center of the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fafafa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 10;
+  width: 400px;
+}
+
+#pop-up-content {
+  text-align: center;
+}
+
+.pause-btn {
+  padding: 10px 20px 10px 20px;
+  background-color: #e8e6e5;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  font-family: "work sans";
+}
+
+.postpone-btn {
+  padding: 10px 20px 10px 20px;
+  background-color: #696765;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: white;
+}
+
+.pop-up-h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.pop-up-p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.p-small-text {
+  font-size: 10px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
@@ -809,7 +871,7 @@ hr {
 
   .box-1 {
     width: 890px;
-    height: 870px;
+    height: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -933,6 +995,12 @@ hr {
   margin-right: 10px;
 }
 /* ----------------------------------- */
+
+.h1-subscriptions {
+  font-size: 24;
+  font-weight: 400;
+  padding-left: 12px;
+}
 
 h4 {
   font-size: 24px;
@@ -1132,6 +1200,12 @@ h4 {
 }
 
 @media (min-width: 640px) {
+  .h1-subscriptions {
+    font-size: 24;
+    font-weight: 400;
+    padding-left: 50px;
+  }
+
   main {
     margin-left: 150px;
     margin-right: 150px;
@@ -1146,6 +1220,11 @@ h4 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .h1-subscriptions {
+    font-size: 38px;
+    font-weight: 400;
   }
 
   h4 {
@@ -1217,6 +1296,11 @@ h4 {
   h2 {
     display: flex;
     justify-content: center;
+  }
+
+  .h2-subscriptions {
+    display: flex;
+    justify-content: left;
   }
 
   .two-row-grid {

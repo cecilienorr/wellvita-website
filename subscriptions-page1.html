@@ -17,7 +17,7 @@
     <!--FONT STYLES-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -88,9 +88,10 @@
 
 
     <main>
-        <h3>Your subscriptions</h3>
+  
 
-        <div class="box-1">
+<div class="box-1">
+            <h1 class="h1-subscriptions">Your subscriptions</h1>
             <div class="box-1-top">
                 <div class="d-vitamin-flex-1">
                     <p>D-vitamin</p>
@@ -103,11 +104,16 @@
                 <p id="price">67,00 DKK</p>
 
                 <!-- Shipping icon -->
-                <div class="d-vitamin-flex-3">
+           <div class="d-vitamin-flex-3">
                     <img src="assets/ri_truck-fill.png" alt="shipping truck icon">
                     <p>Next delivery: 23-30 Nov. </p>
                 </div>
-            </div>
+            </div> 
+
+
+
+
+    
 
             <hr>
 
@@ -153,19 +159,36 @@
             <div class="flex-1">
                 <p>Pause</p>
                 <label class="dropdown">
-                    <div onclick="buttonColor()" class="dd-button-2">
-                        Pause
-                    </div>
+                   <!-- Button to trigger the pop-up -->
+    <button class="dd-button-2" onclick="showPopUp()">Pause</button>
                 </label>
             </div>
+            
+            <!-- POPUP -->
 
+  <!-- HTML for the pop-up -->
+<div id="pop-up" style="display: none;">
+    <h3 class="pop-up-h3">Are you sure you want to pause?</h3>
+    <p class="pop-up-p">Postpone your order for 30 days and we will send you a reminder a week before your next order arrives!</p>
+    <button onclick="hidePopUp()" class="pause-btn">Pause</button>
+    <button onclick="hidePopUp()" class="postpone-btn">Postpone 30 days</button>
+    <p class="p-small-text">If your order is due to arrive within a week, the change will happen after</p>
+
+</div>
+
+<div id="Cancellation" style="display: none;">
+    <p>Are you sure you want to cancel?</p>
+    <button>TEST</button>
+</div>
+  
 
             <hr>
+              
 
             <div class="flex-1">
                 <p>Cancellation</p>
                 <label class="dropdown">
-                    <div onclick="buttonColor()" class="dd-button-3">
+                    <div onclick="showCancellation()" class="dd-button-3">
                         Cancellation
                     </div>
                 </label>
@@ -173,11 +196,12 @@
 
             <br>
 
-            <label class="dropdown">
-                <div class="dd-button-4">
+            <!-- <label class="dropdown"> -->
+                <!-- <div class="dd-button-4">
                     WHY D-VITAMIN?
-                </div>
-            </label>
+                </div> -->
+                <a href="subscription-page2.html" class="dd-button-4">WHY D-VITAMIN</a>
+            <!-- </label> -->
 
         </div>
 
@@ -246,11 +270,11 @@
             <div class="flex-1">
                 <p>Pause</p>
                 <label class="dropdown">
-                    <div onclick="buttonColor()" class="dd-button-2">
-                        Pause
-                    </div>
+         <button class="dd-button-2" onclick="showPopUp()">Pause</button>
                 </label>
             </div>
+
+          
 
 
             <hr>
@@ -266,11 +290,12 @@
 
             <br>
 
-            <label class="dropdown">
-                <div class="dd-button-4">
+               <!-- <label class="dropdown"> -->
+                <!-- <div class="dd-button-4">
                     WHY D-VITAMIN?
-                </div>
-            </label>
+                </div> -->
+                <a href="subscription-page2.html" class="dd-button-4">WHY D-VITAMIN</a>
+            <!-- </label> -->
 
         </div>
 
