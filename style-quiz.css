@@ -196,6 +196,8 @@ section {
 .p-campaign {
   margin-bottom: 50px;
   margin-top: -30px;
+  width: 60vw;
+  margin-right: auto;
 }
 
 /* .bg {
@@ -231,12 +233,16 @@ section {
 } */
 
 #cult {
-  width: 500px;
-  height: 500px;
-  margin-left: -90px;
+  width: 900px;
+  height: 900px;
+  margin-left: -330px;
+  margin-top: 170px;
 }
-.MyContainerId {
-  background-color: red;
+.animation-container {
+  /* background-color: red; */
+  width: 80vw;
+  overflow: hidden;
+  margin: auto;
 }
 .section-campaign {
   background-color: transparent;
@@ -245,8 +251,8 @@ section {
 .article-campaign {
   background-color: #f0e3c6;
   border-radius: 13px;
-  margin: 30px;
-
+  margin: auto;
+  width: 80vw;
   height: 100vh;
 }
 
