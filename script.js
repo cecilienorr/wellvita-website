@@ -78,3 +78,4 @@ function closeCookiePopup() {
   const cookiePopup = document.getElementById("cookie-popup");
   // Hide the element by setting its display style to "none"
   cookiePopup.style.display = "none";
+}
