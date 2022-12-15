@@ -59,4 +59,22 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 });
 
-// rotating
+// cookie
+
+function acceptCookies() {
+  // Handle accept action
+  // For example, you could set a cookie to remember that the user has accepted the use of cookies
+  closeCookiePopup();
+}
+
+function declineCookies() {
+  // Handle decline action
+  // For example, you could redirect the user to a page with more information about your use of cookies
+  closeCookiePopup();
+}
+
+function closeCookiePopup() {
+  // Find the cookie pop-up element
+  const cookiePopup = document.getElementById("cookie-popup");
+  // Hide the element by setting its display style to "none"
+  cookiePopup.style.display = "none";
