@@ -1131,8 +1131,11 @@ footer {
 .testimonials h3 {
   font-weight: 400;
   color: white;
-  padding-top: 140px;
+  padding-top: 160px;
 }
+
+
+
 
 .testimonials-slider {
   overflow: auto;
@@ -1190,6 +1193,12 @@ footer {
     width: 680px;
   }
 
+  .testimonials h3 {
+    font-weight: 400;
+    color: white;
+    padding-top: 230px;
+  }
+
   .testimonials h2 {
     text-align: center;
     margin-top: 24px;
@@ -1222,6 +1231,8 @@ footer {
     width: 205px;
     margin-top: 10px;
   }
+
+
 }
 
 @media (min-width: 1300px) {
@@ -1229,6 +1240,12 @@ footer {
     margin: auto;
     margin-top: 80px;
     width: 1000px;
+  }
+
+  .testimonials h3 {
+    font-weight: 400;
+    color: white;
+    padding-top: 270px;
   }
 
   .testimonials-slider .testimonial-1 {
