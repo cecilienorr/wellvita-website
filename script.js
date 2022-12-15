@@ -59,31 +59,4 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 });
 
-// JavaScript to handle the "accept" button click
-function acceptCookies() {
-  // Hide the cookie pop-up
-  document.getElementById("cookie-popup").style.display = "none";
-
-  // Set a cookie to remember that the user has accepted the cookies
-  document.cookie =
-    "cookies-accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-}
-
-// JavaScript to handle the "decline" button click
-function declineCookies() {
-  // Hide the cookie pop-up
-  document.getElementById("cookie-popup").style.display = "none";
-
-  // Set a cookie to remember that the user has declined the cookies
-  document.cookie =
-    "cookies-declined=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-}
-
-// Check if the user has already accepted or declined the cookies
-if (
-  document.cookie.indexOf("cookies-accepted=") == -1 &&
-  document.cookie.indexOf("cookies-declined=") == -1
-) {
-  // Show the cookie pop-up
-  document.getElementById("cookie-popup").style.display = "flex";
-}
+// rotating
