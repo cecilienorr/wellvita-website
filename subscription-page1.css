@@ -853,6 +853,36 @@ hr {
   font-size: 10px;
 }
 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.footer-content {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.footer-content:hover {
+  text-decoration: underline;
+}
+
+.phone {
+  margin: 20px;
+}
+
+.e-jura {
+  display: block;
+}
+
+.h3-footer {
+  font-size: 24px;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 640px) {
@@ -1086,6 +1116,7 @@ h4 {
 
 .container-ingredients {
   display: flex;
+  justify-content: space-between;
   background-color: #e5e3e2;
   margin-top: 30px;
 }
@@ -1133,9 +1164,53 @@ h4 {
 }
 
 .image-ingredients {
-  width: 130px;
-  height: 130px;
+  /* width: 130px; */
+  height: 200px;
+  width: auto;
 }
+
+.calcium{
+  background-color: red;
+  height: 120px;
+  width: 260px;
+  overflow: hidden;
+}
+
+.calcium img{
+  width: 100%;
+  object-fit: contain;
+  }
+
+.vitamin-c{
+  height: 120px;
+  width: 260px;
+  display: flex;
+  overflow: hidden;
+}
+
+.vitamin-c img{
+  width: 100%;
+  object-fit: cover;
+  }
+
+.zink img{
+  width: 100%;
+    object-fit: contain;
+  }
+
+.zink{
+  height: 120px;
+  width: 260px;
+  display: flex;
+  overflow: hidden;
+}
+
+.zink img{
+width: 100%;
+object-fit: cover;
+}
+
+
 
 #benefits-list {
   color: #a4a4a4;
@@ -1181,7 +1256,7 @@ h4 {
   background: #c8c3bb;
   z-index: -1;
   width: 1px;
-  height: 318px;
+  height: 250px;
   position: absolute;
   left: 7px;
 }
@@ -1327,4 +1402,32 @@ h4 {
   .text-ingredients-2 p {
     padding-right: 628px;
   }
+
+  footer {
+    text-align: center;
+    padding: 90px;
+    justify-content: space-around;
+  }
+
+  .footer-content {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+
+  .footer-content:hover {
+    text-decoration: underline;
+  }
+
+  .phone {
+    margin: 20px;
+    font-size: 30px;
+  }
+  .h3-footer {
+    font-size: 30px;
+  }
+}
+
+  
 }
