@@ -137,33 +137,76 @@
                 background="transparent"
                 speed="1"
                 style="width: 70px; height: 70px"
-                autoplay
+                seek
                 id="leaf"
               ></lottie-player>
                 <p>Plant based</p>
             </div>
+            <script>
+                LottieInteractivity.create({
+                    player:'#leaf-animation',
+                    mode:"scroll",
+                    actions: [
+                        {
+                        visibility: [0.1, 1.0],
+                        type: "play"
+                        }
+                    ]
+                });
+                </script>
             <div class="box-5-div1">
                 <lottie-player
+                id="kemi"
                 src="animations/kemi-animations.json"
                 background="transparent"
                 speed="1"
                 style="width: 70px; height: 70px"
                 autoplay
               ></lottie-player>
+              <script>
+                LottieInteractivity.create({
+                    player:'#kemi',
+                    mode:"scroll",
+                    actions: [
+                        {
+                        visibility: [0.1, 1.0],
+                        type: "play"
+                        }
+                    ]
+                });
+                </script>
+       
+
+
                 <p>Clinically tested</p>
             </div>
             <div class="box-5-div1">
                 <lottie-player
           src="animations/water-animation.json"
+          id="water"
           background="transparent"
           speed="1"
           style="width: 70px; height: 70px"
           autoplay
         ></lottie-player>
+
+        <script>
+            LottieInteractivity.create({
+                player:'#water',
+                mode:"scroll",
+                actions: [
+                    {
+                    visibility: [0.1, 1.0],
+                    type: "play"
+                    }
+                ]
+            });
+            </script>
                 <p>No artificial colouring</p>
             </div>
             <div class="box-5-div1">
                 <lottie-player
+                id="coin"
                 src="animations/coin-animation.json"
                 background="transparent"
                 speed="1"
@@ -173,6 +216,18 @@
                 <p>Best price </p>
             </div>
         </div>
+        <script>
+            LottieInteractivity.create({
+                player:'#coin',
+                mode:"scroll",
+                actions: [
+                    {
+                    visibility: [0.1, 1.0],
+                    type: "play"
+                    }
+                ]
+            });
+            </script>
 
         <div class="box-6">
             <h2>Plants based Ingredients</h2>
