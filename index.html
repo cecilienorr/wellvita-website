@@ -50,24 +50,30 @@
         <script>
           LottieInteractivity.create({
             player: "#cult",
-            mode: "scroll",
+            mode: "cursor",
             actions: [
-              // {
-              //   state: "loop",
-              //   visibility: [0, 1.0],
-              //   type: "seek",
-              //   frames: [50, 1000],
-              // },
               {
-                visibility: [0, 1.0],
-                type: "play",
-                frames: [100, 1000],
+                type: "hover",
+                forceFlag: false,
+                frames: [30, 1000],
               },
             ],
           });
         </script>
       </div>
     </article>
+
+    <!-- HTML for the cookie pop-up -->
+    <div class="cookie-popup" id="cookie-popup">
+      <p>
+        This website uses cookies to ensure you get the best experience on our
+        website.
+      </p>
+
+      <button class="accept" onclick="acceptCookies()">Accept</button>
+      <button class="decline" onclick="declineCookies()">Decline</button>
+    </div>
   </body>
   <script src="lottie-interactive.js"></script>
+  <script src="script.js"></script>
 </html>

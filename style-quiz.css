@@ -394,4 +394,38 @@ section {
     margin-top: 0px;
     max-width: 400px;
   }
+
+  /* Coockie */
+  /* Style the cookie pop-up container */
+  .cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    z-index: 999;
+  }
+
+  /* Style the "accept" and "decline" buttons */
+  .cookie-popup button {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cookie-popup button.accept {
+    background-color: #d2cbc5;
+  }
+
+  .cookie-popup button.decline {
+    background-color: #d2cbc5;
+  }
 }
