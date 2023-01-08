@@ -255,6 +255,7 @@ section {
   width: 80vw;
   overflow: hidden;
   margin: auto;
+  height: 110vh;
 }
 .section-campaign {
   background-color: transparent;
@@ -265,7 +266,41 @@ section {
   border-radius: 13px;
   margin: auto;
   width: 80vw;
-  height: 100vh;
+  height: 105vh;
+}
+
+/* Coockie */
+/* Style the cookie pop-up container */
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  z-index: 999;
+}
+
+/* Style the "accept" and "decline" buttons */
+.cookie-popup button {
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.cookie-popup button.accept {
+  background-color: #d2cbc5;
+}
+
+.cookie-popup button.decline {
+  background-color: #d2cbc5;
 }
 
 /*------------------------------------ Media queries-------------------------------- */
